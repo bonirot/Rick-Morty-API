@@ -1,0 +1,161 @@
+:root {
+  --first-color: #7ac34e;
+  --second-color: #00b0c7;
+  --first-color-light: #d9ffc1;
+  --second-color-light: #6cc6d2;
+  --third-color: #34274c;
+}
+
+@font-face {
+  font-family: "rick-and-morty-font";
+  src: url("fonts/rick-and-morty-font.ttf") format("truetype");
+  font-family: "brownies";
+  src: url("fonts/brownies.ttf") format("truetype");
+}
+
+body {
+  font-size: 75%;
+  font-family: "Noto Sans JP", sans-serif;
+  padding: o;
+  margin: 0;
+  background-color: var(--third-color);
+  background-image: url("assets/rickandmortywall2.png");
+  background-size: 18%;
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  /* background-color: white; */
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  color: white;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: var(--first-color);
+  /* background: linear-gradient(
+    to right,
+    var(--first-color),
+    var(--second-color-light)
+  ); */
+  height: 5rem;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  border-bottom: solid #47712d;
+}
+
+.navbar {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.headerFont {
+  display: flex;
+  align-items: center;
+  font-family: "Brownies", sans-serif;
+  font-size: 1.8rem;
+}
+
+.facelogo {
+  padding-top: 0.5rem;
+  /* width: 5rem; */
+  height: 7rem;
+}
+
+.logoimg {
+  width: 10rem;
+  height: 4rem;
+  padding-top: 1.8rem;
+  padding-bottom: 0.5rem;
+}
+
+.main {
+  display: flex;
+  margin-top: 5rem;
+}
+
+.episodeList {
+  background-color: var(--first-color);
+  display: flex;
+  /* position: fixed; */
+  flex-direction: column;
+  /* padding-left: 0; */
+  /* padding-top: 1rem; */
+  width: 10%;
+}
+
+.episodeList-item {
+  /* border-top: solid #006471 0.05rem; */
+  border-bottom: solid #006471 0.05rem;
+}
+
+.episodeList-item:hover {
+  background: rgba(0, 0, 0, 0.1);
+}
+
+.text {
+  padding: 0.8rem;
+  margin: 0;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.pagesContainer {
+  width: 100%;
+  /* top: 5rem; */
+}
+
+.pagesContainer-page {
+  display: flex;
+  justify-content: center;
+  box-sizing: inherit;
+  padding: 2rem;
+  background-color: rgba(255, 255, 255, 0.2);
+  /* background-color: var(--second-color); */
+  width: 70%;
+  border-radius: 1%;
+  margin: 2rem auto;
+}
+
+.scrollarea {
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  /* top: 5.2rem; */
+  margin-left: 0;
+  width: 15%;
+  height: 100%;
+}
+
+/*CUSTOM SCROLLBAR*/
+
+/* width */
+::-webkit-scrollbar {
+  width: 0.8rem;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/*CUSTOM SCROLLBAR*/
+
+.hide {
+  display: none;
+}

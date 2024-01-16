@@ -3,106 +3,155 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Rick and Morty</title>
     <link
       rel="icon"
       type="image/x-icon"
       href="assets/Rick-And-Morty-PNG-Free-Image.png"
     />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="fonts/rick-and-morty-font.ttf" />
+    <link rel="stylesheet" href="fonts/Brownies.ttf" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <title>Rick and Morty</title>
   </head>
   <body>
     <!-- HEADER RICK AND MORTY -->
 
-    <nav class="bg-rm01 bg-gradient">
-      <header
-        class="justify-content-center d-flex flex-wrap py-3 border-bottom"
-      >
-        <!-- clases de a: d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none" -->
-        <a href="#" class="navbar-brand">
-          <span class="fs-4"
-            ><img
-              src="assets/Rick_and_Morty logo.svg"
-              alt="rick and morty header"
-              width="150"
-              class="d-inline-block align-text-top"
-          /></span>
-        </a>
-      </header>
-    </nav>
+    <header class="header">
+      <nav class="navbar">
+        <img class="facelogo" src="assets/rickface.png" />
+        <img
+          src="assets/rickandmortynameblack.png"
+          alt="rick and morty header"
+          class="logoimg"
+        />
+        <p class="headerFont">(API Project)</p>
+      </nav>
+    </header>
 
-    <!-- EPISODE SIDEBAR -->
+    <!-- HEADER RICK AND MORTY -->
 
-    <div
-      class="d-flex flex-column align-items-stretch flex-shrink-0 bg-body-tertiary"
-      style="width: 20rem"
-    >
-      <div
-        id="episodesDiv"
-        class="list-group list-group-flush border-bottom scrollarea"
-      >
-        <a
-          href="#"
-          class="list-group-item py-3 lh-sm bg-rm02"
-          aria-current="true"
-        >
-          <div class="d-flex w-100 align-items-center justify-content-between">
-            <strong class="mb-1">List group item heading</strong>
-          </div>
-          <div class="col-10 mb-1 small">
-            Some placeholder content in a paragraph below the heading and date.
-          </div>
-        </a>
-        <a href="#" class="list-group-item py-3 lh-sm bg-rm04">
-          <div class="d-flex w-100 align-items-center justify-content-between">
-            <strong class="mb-1">List group item heading</strong>
-          </div>
-          <div class="col-10 mb-1 small">
-            Some placeholder content in a paragraph below the heading and date.
-          </div>
-        </a>
-        <a href="#" class="list-group-item py-3 lh-sm bg-rm04">
-          <div class="d-flex w-100 align-items-center justify-content-between">
-            <strong class="mb-1">List group item heading</strong>
-          </div>
-          <div class="col-10 mb-1 small">
-            Some placeholder content in a paragraph below the heading and date.
-          </div>
-        </a>
+    <main class="main">
+      <!-- EPISODE SIDEBAR -->
 
-        <a
-          href="#"
-          class="list-group-item py-3 lh-sm bg-rm04"
-          aria-current="true"
-        >
-          <div class="d-flex w-100 align-items-center justify-content-between">
-            <strong class="mb-1">List group item heading</strong>
-          </div>
-          <div class="col-10 mb-1 small">
-            Some placeholder content in a paragraph below the heading and date.
-          </div>
-        </a>
-        <a href="#" class="list-group-item py-3 lh-sm bg-rm04">
-          <div class="d-flex w-100 align-items-center justify-content-between">
-            <strong class="mb-1">List group item heading</strong>
-          </div>
-          <div class="col-10 mb-1 small">
-            Some placeholder content in a paragraph below the heading and date.
-          </div>
-        </a>
-        <a href="#" class="list-group-item py-3 lh-sm bg-rm04">
-          <div class="d-flex w-100 align-items-center justify-content-between">
-            <strong class="mb-1">List group item heading</strong>
-          </div>
-          <div class="col-10 mb-1 small">
-            Some placeholder content in a paragraph below the heading and date.
-          </div>
-        </a>
-      </div>
-    </div>
-    <button type="button" class="btn btn-rm01">Load more</button>
+      <aside class="episodeList scrollarea">
+        <div class="episodeList-item">
+          <h4 class="text">Episodio 1</h4>
+        </div>
+
+        <div class="episodeList-item">
+          <h4 class="text">Episode 2</h4>
+        </div>
+
+        <div class="episodeList-item">
+          <h4 class="text">Episode 3</h4>
+        </div>
+
+        <div class="episodeList-item">
+          <h4 class="text">Episode 4</h4>
+        </div>
+
+        <div class="episodeList-item">
+          <h4 class="text">Episode 5</h4>
+        </div>
+
+        <div class="episodeList-item">
+          <h4 class="text">Episode 6</h4>
+        </div>
+
+        <div class="episodeList-item">
+          <h4 class="text">Episode 7</h4>
+        </div>
+
+        <div class="episodeList-item">
+          <h4 class="text">Episode 8</h4>
+        </div>
+
+        <div class="episodeList-item">
+          <h4 class="text">Episode 9</h4>
+        </div>
+
+        <div class="episodeList-item">
+          <h4 class="text">Episode 10</h4>
+        </div>
+
+        <div class="episodeList-item">
+          <h4 class="text">Episode 11</h4>
+        </div>
+
+        <div class="episodeList-item">
+          <h4 class="text">Episode 12</h4>
+        </div>
+
+        <div class="episodeList-item">
+          <h4 class="text">Episode 13</h4>
+        </div>
+
+        <div class="episodeList-item">
+          <h4 class="text">Episode 14</h4>
+        </div>
+
+        <div class="episodeList-item">
+          <h4 class="text">Episode 15</h4>
+        </div>
+
+        <div class="episodeList-item">
+          <h4 class="text">Episode 16</h4>
+        </div>
+
+        <div class="episodeList-item">
+          <h4 class="text">Episode 17</h4>
+        </div>
+        <button>Load more!</button>
+      </aside>
+
+      <!-- EPISODE SIDEBAR -->
+
+      <section class="pagesContainer">
+        <!-- PAGE 01 -->
+
+        <div id="page01" class="pagesContainer-page text">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae
+          exercitationem, repudiandae ut laudantium ducimus doloribus
+          accusantium qui pariatur quos placeat quis cumque. Harum magnam error
+          quaerat ipsam sed, dolor ullam? Lorem ipsum, dolor sit amet
+          consectetur adipisicing elit. Incidunt, veritatis cupiditate soluta
+          dolore deserunt at tempora pariatur nostrum sapiente! Reprehenderit
+          veritatis in voluptate aliquid amet consectetur vel magni natus autem.
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus
+          nihil quaerat odio quidem, doloremque eum ipsum quisquam quo, repellat
+          tempora assumenda reiciendis dolor eos eveniet accusamus sit soluta
+          tempore aut. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+          Neque nesciunt ipsa et reprehenderit quam dolores. Soluta magnam
+          omnis, itaque corporis, assumenda dolorem molestiae quae minus
+          inventore quis praesentium, labore tempore! Lorem ipsum, dolor sit
+          amet consectetur adipisicing elit. Ipsum, architecto eaque facilis
+          labore repudiandae explicabo? Minus quia iure, quas nisi explicabo,
+          laborum ut accusamus quam tenetur sunt illum! Culpa, alias! Lorem
+          ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus
+          consectetur magni tempora unde? Dolor, atque blanditiis culpa
+          consequuntur reiciendis quae iusto error. Ratione at alias sequi,
+          eligendi necessitatibus earum ipsam. Lorem ipsum dolor sit, amet
+          consectetur adipisicing elit. Ratione eligendi officia id consectetur,
+          sit neque voluptatem itaque accusantium voluptates veniam, distinctio
+          eum unde. Nulla fugiat accusamus ipsam commodi repellendus adipisci.
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem
+          odio officia voluptas? Velit neque fugit iste iusto quae ipsa unde
+          nemo, expedita commodi aliquam voluptatum, saepe dolores
+          reprehenderit, suscipit voluptatem? Lorem ipsum dolor sit, amet
+          consectetur adipisicing elit. Dolorem quae iste sed eaque commodi eum
+          esse voluptates tempore neque! Hic cupiditate quas ipsam debitis
+          distinctio tenetur magnam dolore qui veniam.
+        </div>
+
+        <!-- PAGE 02 -->
+
+        <div id="page02" class="container-page hide"></div>
+      </section>
+    </main>
   </body>
-  <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
-  <script src="node_modules/@popperjs/core/dist/umd/popper.js"></script>
   <script src="dist/script.js"></script>
 </html>
