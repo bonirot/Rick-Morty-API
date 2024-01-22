@@ -1,8 +1,4 @@
 @font-face {
-  font-family: "brownies";
-  src: url("fonts/brownies.ttf") format("truetype");
-}
-@font-face {
   font-family: "rick-and-morty";
   src: url("fonts/rick-and-morty.ttf") format("truetype");
 }
@@ -17,6 +13,7 @@ html {
   --first-color-light: #d9ffc1;
   --second-color-light: #6cc6d2;
   --third-color: #34274c;
+  --fourth-color: #4d7b31;
 }
 
 body {
@@ -34,9 +31,10 @@ body {
   height: 100%;
   color: white;
   background-color: var(--third-color);
-  border: solid green;
 }
+
 /* ----------- HEADER ----------- */
+
 .header {
   display: flex;
   justify-content: center;
@@ -53,7 +51,7 @@ body {
   /* position: fixed; */
   top: 0;
   left: 0;
-  border-bottom: solid #47712d;
+  /* border-bottom: solid #47712d; */
 }
 
 .navbar {
@@ -61,10 +59,17 @@ body {
   gap: 0.5rem;
 }
 
+.header--logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .headerFont {
   display: flex;
   align-items: center;
   font-family: "rick-and-morty", sans-serif;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   font-size: 1.8rem;
 }
 
@@ -77,7 +82,7 @@ body {
 .logoimg {
   width: 10rem;
   height: 4rem;
-  padding-top: 1.8rem;
+  padding-top: 1rem;
   padding-bottom: 0.5rem;
 }
 
@@ -98,34 +103,24 @@ li {
 }
 .episodeListTitle {
   font-family: "rick-and-morty", sans-serif;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   text-align: center;
   font-weight: 800;
   font-size: 1rem;
   margin: 0;
   padding: 1rem;
-  background-color: #4d7b31;
+  background-color: var(--fourth-color);
 }
 
 .episodeList {
   width: 15%; /* Establece el ancho del contenedor según tus preferencias */
-  height: 90%; /* Establece la altura del contenedor según tus preferencias */
-  overflow: auto; /* Habilita la barra de desplazamiento cuando sea necesario */
+  height: 84.5%; /* Establece la altura del contenedor según tus preferencias */
+  overflow-y: auto; /* Habilita la barra de desplazamiento cuando sea necesario */
   background-color: var(--first-color);
-  /* display: flex; */
   position: absolute;
-  /* flex-direction: column; */
-  /* padding-left: 0; */
-  /* padding-top: 1rem; 
-  width: 15%;
-  height: 10%;
-  flex-direction: column;
-  overflow-y: auto;
-  /* top: 5.2rem; 
-  margin-left: 0; */
 }
 
 .episodeList-item {
-  /* border-top: solid #006471 0.05rem; */
   border-bottom: solid #006471 0.05rem;
 }
 
@@ -142,51 +137,91 @@ li {
   font-size: 0.8rem;
 }
 
-.pagesContainer {
+.nameText {
+  display: flex;
+  justify-content: center;
+  color: var(--first-color);
+  font-weight: 800;
+  font-size: 1rem;
+}
+
+.episodeTitle {
+  font-size: 2.5rem;
+  font-family: "rick-and-morty", sans-serif;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  color: var(--first-color);
+}
+
+.mainContainer {
   display: flex;
   justify-content: center;
   width: 100%;
   height: 100%;
   /* top: 5rem; */
-  border: solid orange 1px;
+  /* border: solid orange 1px; */
   margin-left: 15%;
+  margin-bottom: 2rem;
 }
 
-.pagesContainer-page {
+.mainContainer-page {
   /* display: flex;
   flex-direction: column; */
-  justify-content: center;
-  /* box-sizing: inherit; */
   padding: 2rem;
   background-color: rgba(255, 255, 255, 0.2);
-  /* background-color: var(--second-color); */
   width: 70%;
   height: 60%;
-  border-radius: 1%;
-  margin: 2rem auto;
-  border: solid green 1px;
-}
-
-.mainPage {
+  margin: 3rem auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
   font-family: "rick-and-morty", sans-serif;
   font-size: 4rem;
+  border-radius: 0.6rem;
 }
 
-.characterAvatar {
-  width: 10rem;
-  margin: 1rem;
-  padding: 2rem;
-  padding-bottom: 6rem;
-  background-color: white;
+.mainContainer-page-mainImage {
+  margin-top: 1rem;
+  width: 40%;
 }
 
-/* .scrollarea {
+.mainContainer-page-welcomeText {
+  color: var(--first-color);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  font-size: 3rem;
+}
+
+.infoCard {
+  width: 90%;
+  margin-bottom: 1rem;
+}
+
+.characterCards-container {
   display: flex;
   flex-direction: column;
-  overflow-y: auto;
-  /* top: 5.2rem; 
-  margin-left: 0;
-} */
+  width: 20%;
+  margin: 0.5rem;
+  padding: 1rem;
+  background-color: white;
+  border-radius: 0.5rem;
+}
+
+.characterCards-avatar {
+  /* float: left; */
+  /* display: flex;
+  justify-content: center; */
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  /* border:solid purple; */
+}
+
+.characterCards-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: black;
+}
 
 /*CUSTOM SCROLLBAR*/
 
@@ -197,12 +232,12 @@ li {
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: #f1f1f1;
+  background: #888;
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #888;
+  background: #703ca0;
 }
 
 /* Handle on hover */
@@ -210,8 +245,118 @@ li {
   background: #555;
 }
 
-/*CUSTOM SCROLLBAR
+.btnLoad {
+  background-color: var(--third-color);
+  border: none;
+  border-radius: 0.3rem;
+  color: white;
+  padding: 0.6rem;
+  /* padding-left: 0.4;
+  padding-right: 0.4; */
+  width: 8rem;
+  margin: 0.3rem;
+}
+
+.btnLoad:hover {
+  background: rgba(0, 0, 0, 0.6);
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  /* flex-direction: row; */
+  gap: 8%;
+  text-align: center;
+  justify-content: center;
+  /* padding: 1rem; */
+  background-color: var(--fourth-color);
+  margin-top: auto;
+  padding: 1rem;
+}
+
+/*RESPONSIVE DESIGN*/
+
+.dropdown {
+  display: none;
+  margin: 3rem;
+  margin-right: 10rem;
+}
+
+.dropbtn {
+  padding: 0.5rem;
+  padding-left: 1.3rem;
+  padding-right: 1.3rem;
+  font-size: 1rem;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  background-color: var(--fourth-color);
+  border-radius: 0.3rem;
+  color: white;
+  font-family: "rick-and-morty", sans-serif;
+}
+
+.dropbtn:hover {
+  background: rgba(0, 0, 0, 0.6);
+}
 
 .hide {
   display: none;
-}*/
+}
+
+@media screen and (max-width: 812px) {
+  .header {
+    justify-content: left;
+  }
+  .dropdown {
+    display: block;
+  }
+  .dropdown-content {
+    height: 20rem;
+    overflow-y: auto;
+  }
+
+  .episodeListTitle {
+    display: none;
+  }
+  .episodeList {
+    display: none;
+  }
+  .episodeList-dropdown {
+    background-color: #9ceb6e;
+    width: 9.5rem; /* Establece el ancho del contenedor según tus preferencias */
+    height: 20rem; /* Establece la altura del contenedor según tus preferencias */
+    overflow-y: auto; /* Habilita la barra de desplazamiento cuando sea necesario */
+    top: 4rem;
+    margin-left: 3rem;
+    position: absolute;
+    border-radius: 0.5rem;
+    color: black;
+  }
+
+  .mainContainer {
+    margin-left: 0;
+  }
+  .episodeTitle {
+    font-size: 2rem;
+  }
+  .characterCards-container {
+    width: 40%;
+  }
+}
+
+/*.dropdownIco {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  width: 2rem;
+  height: 2rem;
+}
+
+.dropdownEpisodes {
+  display: flex;
+  align-items: center;
+} */

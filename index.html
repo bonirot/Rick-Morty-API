@@ -21,13 +21,22 @@
 
     <header class="header">
       <nav class="navbar">
-        <img class="facelogo" src="assets/rickface.png" />
-        <img
-          src="assets/rickandmortynameblack.png"
-          alt="rick and morty header"
-          class="logoimg"
-        />
-        <p class="headerFont">(API Project)</p>
+        <div class="dropdown">
+          <button id="btnLoadDropdown" class="dropbtn">
+            E p i s o d e s ▼
+          </button>
+
+          <!-- <div id="dropdownEpisodes" class="dropdown-content"></div> -->
+        </div>
+        <div class="header--logo">
+          <img class="facelogo" src="assets/rickface.png" />
+          <img
+            src="assets/rickandmortynameblack.png"
+            alt="rick and morty header"
+            class="logoimg"
+          />
+          <p class="headerFont">(API Project)</p>
+        </div>
       </nav>
     </header>
 
@@ -36,22 +45,31 @@
     <main class="main">
       <!-- EPISODE SIDEBAR -->
 
-      <aside id="episodeContainer" class="episodeList">
+      <aside id="episodeContainer" class="episodeList episodeList-dropdown">
         <p class="episodeListTitle">E p i s o d e s</p>
         <ul id="listContainer"></ul>
-        <button id="btnLoad">Load more!</button>
+        <button id="btnLoad" class="btnLoad">Load more!</button>
       </aside>
 
       <!-- EPISODE SIDEBAR -->
 
-      <section id="pagesContainer" class="pagesContainer">
+      <section id="pagesContainer" class="mainContainer">
         <!-- Main Page -->
 
-        <div id="mainContainer" class="pagesContainer-page text mainPage">
-          Welcome to this amazing API!
+        <div id="mainContainer" class="mainContainer-page text">
+          <img
+            class="mainContainer-page-mainImage"
+            src="assets/rickandmorty.png"
+            alt="Rick and Morty making faces"
+          />
+          <p class="mainContainer-page-welcomeText">
+            Welcome to this amazing web!
+          </p>
+          <div id="divCardContainer" class="characterCards"></div>
         </div>
       </section>
     </main>
+    <footer>Julia Sanchis. All Rights Reserved</footer>
   </body>
 
   <script type="module" src="dist/script.js"></script>
