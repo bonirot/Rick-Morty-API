@@ -21,12 +21,6 @@ body {
   font-family: "Noto Sans JP", sans-serif;
   padding: 0;
   margin: 0;
-  /* background-color: var(--third-color);
-  background-image: url("assets/rickandmortywall2.png");
-  background-size: 18%;
-  background-repeat: no-repeat;
-  background-position: bottom right; */
-  /* display: flex; */
   width: 100%;
   height: 100%;
   color: white;
@@ -41,17 +35,10 @@ body {
   align-items: center;
   text-align: center;
   background-color: var(--first-color);
-  /* background: linear-gradient(
-    to right,
-    var(--first-color),
-    var(--second-color-light)
-  ); */
   height: 5rem;
   width: 100%;
-  /* position: fixed; */
   top: 0;
   left: 0;
-  /* border-bottom: solid #47712d; */
 }
 
 .navbar {
@@ -75,7 +62,6 @@ body {
 
 .facelogo {
   padding-top: 0.5rem;
-  /* width: 5rem; */
   height: 7rem;
 }
 
@@ -157,15 +143,11 @@ li {
   justify-content: center;
   width: 100%;
   height: 100%;
-  /* top: 5rem; */
-  /* border: solid orange 1px; */
   margin-left: 15%;
   margin-bottom: 2rem;
 }
 
 .mainContainer-page {
-  /* display: flex;
-  flex-direction: column; */
   padding: 2rem;
   background-color: rgba(255, 255, 255, 0.2);
   width: 70%;
@@ -204,16 +186,13 @@ li {
   padding: 1rem;
   background-color: white;
   border-radius: 0.5rem;
+  text-align: center;
 }
 
 .characterCards-avatar {
-  /* float: left; */
-  /* display: flex;
-  justify-content: center; */
   width: 100%;
   margin: 0;
   padding: 0;
-  /* border:solid purple; */
 }
 
 .characterCards-info {
@@ -251,8 +230,6 @@ li {
   border-radius: 0.3rem;
   color: white;
   padding: 0.6rem;
-  /* padding-left: 0.4;
-  padding-right: 0.4; */
   width: 8rem;
   margin: 0.3rem;
 }
@@ -267,11 +244,9 @@ footer {
   left: 0;
   width: 100%;
   display: flex;
-  /* flex-direction: row; */
   gap: 8%;
   text-align: center;
   justify-content: center;
-  /* padding: 1rem; */
   background-color: var(--fourth-color);
   margin-top: auto;
   padding: 1rem;
@@ -347,16 +322,3 @@ footer {
     width: 40%;
   }
 }
-
-/*.dropdownIco {
-  display: flex;
-  justify-content: left;
-  align-items: center;
-  width: 2rem;
-  height: 2rem;
-}
-
-.dropdownEpisodes {
-  display: flex;
-  align-items: center;
-} */
