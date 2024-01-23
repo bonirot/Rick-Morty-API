@@ -53,7 +53,7 @@ async function printContent(url: string): Promise<void> {
 
 async function printEpisodeInfo(clickEvent: MouseEvent) {
   const target = clickEvent.target as HTMLHeadingElement;
-  const urlInfoEpisodes = target.getAttribute("episodeUrl")!; // ! significa va a existis sí o sí, siempre
+  const urlInfoEpisodes = target.getAttribute("episodeUrl")!;
   const data2 = await fetch(urlInfoEpisodes);
   const episode: Episode = await data2.json();
   const displayInfo = `<div d="infoCard" class="infoCard">
