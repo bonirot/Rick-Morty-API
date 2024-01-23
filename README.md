@@ -51,3 +51,5 @@ DAILY WORK
 
     · 22nd January 2023:
         Implementing typescript, making the last changes in CSS and adding the responsive design.
+
+HELLOOOOOO
